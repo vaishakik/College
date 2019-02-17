@@ -1,0 +1,757 @@
+print(0o12+0x9)   
+print(0b111)
+//////
+z=2+3j
+y=z.conjugate()
+print(y)
+///////
+x=y=z='Subbu'
+print x
+print y
+print z
+//////
+x=y=z='Subbu'+'KLE'
+print x
+print y
+print z
+//////
+s1="hello"
+s2='HUBLI'
+s3=s1+s2
+print s3   or with (   )
+//////
+print("good "+'morning')
+print('Age'+'.'+"ULTRON")
+////////
+print("INDIA\n\n\n")
+print('KARNATAKA\n\n')      // NEW LINE
+//////
+single level inheritance
+class animal:
+    def eat(self):
+        print 'eating...'
+class dog(animal):
+    def bark(self):
+        print 'barking'
+d=dog()
+d.eat()
+d.bark()
+////
+name="Subrahmanya"
+mob=7338312161
+mail='subbu.gunaga@gmail.com'
+Add='BasavShant Nagar'
+DOB='27/09/1998'
+usn='01fe16bec185'
+UNIV="KLE TECH"
+print name
+print mob
+print mail
+print DOB
+print usn
+print usn
+print UNIV
+/////
+name="Subrahmanya"
+mob=7338312161
+mail='subbu.gunaga@gmail.com'
+Add='BasavShant Nagar'
+DOB='27/09/1998'
+usn='01fe16bec185'
+UNIV="KLE TECH"
+print (name, mob,mail,DOB,usn,UNIV,Add)
+print "Student name is",name
+print "Student mobile no.",mob
+print 'student mail-id is',mail
+print 'student dob is',DOB
+print 'student usn',usn
+print 'Student studying in',UNIV
+////
+list1=[123,456]
+list2=[123,456]
+print cmp(list1,list2)
+list3=[123,'abc']
+list4=[456,'xyz']
+print cmp(list3,list4)
+///
+list1,list2=[12,33,55],['aaa','bbb','zzq']
+print "max of list1:",max(list1)
+print "max of list2 : ",max(list2)
+/////////
+list1,list2=[12,33,55],['aaa','bbb','zz']
+print "max of list1:",min(list1)
+print "max of list2 : ",max(list2)
+/////
+sorting
+list1=['xyz','asd','zzz','asdq']
+list1.sort()
+print list1
+//////
+append
+list1=[123,'wew','dfdf','2we'];
+list1.append(2018);
+print list1
+////
+deletes
+list1=[123,434,234,543]
+list1.pop(2)
+print list1
+list1.pop(1)
+print list1
+/////
+length of the list
+list1,list2=[12,'xaaee','asd',12],[123,23,234]
+print "the length of the first list is ", len(list1)
+print "the length of second list is" , len(list2)
+////
+add at required position
+list1=[123,234,45,56]
+list1.insert(3,3421)
+print 'added element is ',list1
+list1.insert(0,1)
+print 'again added',list1
+////
+REVERSE THE LIST
+list1=[123,'asdasd',200,'aa',356,'zzz']
+list1.reverse()
+print 'after reversal the new list is ',list1
+////
+Using dictionary
+DICT1={'NAME':'sUBBU','AGE':19,1:'HELLO'}
+print(DICT1['NAME'])
+print(DICT1['AGE'])
+print(DICT1[1])
+////
+we can update the dictionary values
+dict1={'name':'subbu','age':19}
+print(dict1['age'])
+dict1['age']=20
+print(dict1['age'])
+/////
+new fields can be added to the dict.
+dict1={'name':'subbu','age':19}
+print(dict1)
+dict1['address']='DWD'
+print(dict1)
+///
+delete last item
+dict1={'name':'subbu','age':19,'salary':925000}
+result=dict1.popitem()
+print dict1
+print 'return value', result
+///
+two new operators
+x=12
+y=5
+print ('x//y=',x//y)
+print ('x**y',x**y)
+////
+operators T and F capital
+x=True
+y=False
+print('x and y',x and y)
+print('x or y', x or y)
+print('x not', not x)
+/////
+x=53
+y=x<<4
+print y
+////
+special operators, even arrangement of items matter
+x=5
+y=5
+a='mca'
+b='mca'
+c=[1,2,3]
+d=[1,3,2]
+print(x is not y)
+print (a is b)
+print( c is d)
+////
+ scan
+var=raw_input('enter something')
+print 'you entered ',var
+enter something India comes In asia
+you entered   India comes In asia
+////
+only input for  arithmetic
+a=input('enter 1 numbers')
+b=input('enter 2nd number')
+print ('sum',a+b)
+print ('diff',a-b)
+print ('product',a*b)
+print ('div',a/b)
+print ('// ', a//b)
+print ('** ',a**b)
+////
+simple interset
+p=raw_input('enter principle numbers')
+t=raw_input('enter time number')
+r=raw_input('enter the rate of interest')
+p=int(p)
+t=int(t)
+r=int (r)
+print 'simple interset is',(p*t*r)/100
+////
+p=raw_input('enter principle numbers')
+t=raw_input('enter time number')
+r=raw_input('enter the rate of interest')
+p,t,r=int(p),int(t),int(r)
+print 'simple interset is',(p*t*r)/100
+///
+package
+import math 
+print '20^4', math.pow(20,4)
+print '100 pow of 2', math.pow(100,2)
+print 'math.pow(3,0)',math.pow(3,0)
+////
+import math
+p=raw_input('enter principle amount')
+t=raw_input('enter the time')
+r=raw_input('enter rate of interset')
+p=float(p)
+t=float(t)
+r=float(r)
+r=float(1+r/100)
+r=math.pow(r,t)
+a=r*p
+ci=a-p
+print 'the compound interest is =',ci
+////     
+import math
+p=input('enter principle amount')
+t=input('enter the time')
+r=input('enter rate of interset')
+p=float(p)
+t=float(t)
+//
+r=float(r)
+r=float(1+r/100)
+r=math.pow(r,t)
+a=r*p
+ci=a-p
+print 'the compound interest is =',ci
+//////     
+num=3
+if num>0:     print(num,"is a positive num")
+////
+n=-1
+if n>0:
+    print('the number is positive')
+print('this is aslo printed') //if place is left then it is included in loop
+////
+continue
+for x in range(10):
+    #check if x is even
+    if x%2==0:
+        continue
+    print(x)
+///
+for x in range(10):
+    #check if x is even
+    if x%2==0:
+     print(x)
+////
+for x in range(10):
+    print x
+for x in range(3,6):
+    print(x)
+////
+for x in range(5):
+    print x
+for x in range(3,6,4):
+    print(x)
+////
+str1='INDIA IS GREAT'
+for x in str1:
+    print x
+////    
+num=-3.2+3.2
+if num>0:
+    print 'pos. num'
+elif num==0:
+    print 'zero'
+else:
+     print'neg.num'
+/////
+var=10
+while var>0:
+    var=var-1
+    if var==5:
+        continue
+    print 'current value' , var
+print 'end of execution'
+/////
+function fact
+#find the factorial of anumber
+def cal_factorial(x):
+    "'this is a recursive function to find the factorial of an integer'"
+    if x==1:
+        return 1
+    else:
+         return(x*cal_factorial(x-1))
+
+
+num=5
+print('the fctorial of',num,'is',cal_factorial(num))
+/////
+glo_var=13
+
+def func():
+    loc_var=13.0
+    print(glo_var)
+    print(loc_var)
+func()
+
+print(glo_var)
+print(loc_var)
+///
+file
+#open file
+fileobject=open("sample.txt","w")
+print'file created is =',fileobject.name
+#close file
+
+fileobject.close()
+//////
+#open file
+fileobject=open("sample1.docx","w")
+print'file created is =',fileobject.name
+#close file
+fileobject.close()
+////
+excel
+#open file
+fileobject=open("sample1.xlsx","w")
+print'file created is =',fileobject.name
+#close file
+
+fileobject.close()
+///
+#open file
+fileobject=open("sample1.mp3","w")
+print'file created is =',fileobject.name
+#close file
+
+fileobject.close()
+////
+to write
+lhs is just name of the file
+#open file
+filo=open("write.txt","w")
+filo.write("I am verygood")
+#close file
+filo.close()
+////
+#open file
+filo=open("write.txt","r")
+str=filo.read(17)
+print'string read =',str
+#close file
+filo.close()
+////
+#open file
+filo=open("write.txt","a")
+filo.write("\n I will achieve my goal")
+#close file
+filo.close()
+////
+import os
+os.remove('sample1.xlsx')
+print 'fle is deleted successfully'
+///
+import os
+os.mkdir('abc')
+print"new directory is created"
+//
+specified path to create new folder
+import os
+#os.mkdir(
+os.mkdir('C:\\Python27\\abc')
+print"new directory is created"
+////
+import os
+filenames=os.listdir('.')
+print filenames
+sortedfilenames=sorted(filenames)
+print sortedfilenames
+///
+not 
+import os
+os.rmdir('d')
+print 'fle is deleted successfully'
+///
+graph
+import matplotlib.pyplot as plt
+plt.plot([6],[12])
+plt.ylabel('Y axis')
+plt.xlabel('x axis')
+//
+class
+class myclass:
+    a=10
+print(myclass.a)
+////
+class myclass:
+    a=10
+    b=12
+    c=34
+print myclass.a
+print myclass.b,myclass.c
+////
+reason fo weird output
+class myclass:
+    a=10.234
+    b='23dwwew'
+    c={'asd',123,'hello'}
+print myclass.a
+print myclass.b,'\n'  ,myclass.c 
+///
+class myclass:
+    def fun1(self):
+        print 'first'
+    def fun2(self):
+        print 'second'
+obj_name=myclass()
+obj_name.fun1()
+obj_name.fun2()
+////
+class myclass:
+    def fun1(self):
+        print 'first'
+obj_name=myclass()
+obj_name.fun1()
+class myclass2:
+    def fun1(self):
+        print'2nd block'
+obj2=myclass2()
+obj2.fun1()
+class myclass3:
+    def fun1(self):
+        print'3rd block'
+obj3=myclass3()
+obj3.fun1()
+////
+a bit different , execute
+class myclass:
+    def fun1(self):
+        print 'first'
+obj_name=myclass()
+obj_name.fun1()
+class myclass2:
+    def fun1(self):
+        print'2nd block'
+obj2=myclass2()
+obj2.fun1()
+class myclass2:
+    def fun1(self):
+        print'3rd block'
+obj3=myclass2()
+obj3.fun1()
+////
+class employee:
+    def __init__(self,name):
+        self.name=name
+    def displayemp1(self):
+        print 'name :',self.name
+emp1=employee('abcdefghijkml')
+emp1.displayemp1()
+////
+class empname:
+    def __init__(self,name):
+        self.name=name
+    def disname(self):
+        print 'Name',self.name
+emp1=empname("Karna")
+emp1.disname()
+class empage:
+    def __init__(self,age):
+        self.age=age
+    def dispage(self):
+         print'AGE=',self.age
+emp2=empage(22)
+emp2.dispage()
+class empsalary:
+    def __init__(self,sala):
+        self.sala=sala
+    def dispsala(self):
+        print"salary ",self.sala
+emp3=empsalary(1000000)
+emp3.dispsala()
+///
+not recommended
+class empname:
+    def __init__(self,name):
+        self.name=name
+    def disname(self):
+        print 'Name',self.name
+emp1=empname("Karna")
+emp1.disname()
+class empname:
+    def __init__(self,age):
+        self.age=age
+    def disname(self):
+        print 'age ',self.age
+emp1=empname(22)
+emp1.disname()
+class empname:
+    def __init__(self,sala):
+        self.sala=sala
+    def disname(self):
+        print 'salary ',self.sala
+emp1=empname(10000000)
+emp1.disname()
+////
+class emp:
+    empcount=0
+    def __init__(self,name,salary):
+        self.name=name
+        self.salary=salary
+        emp.empcount+=1
+
+    def disp(self):
+        print 'name:',self.name,',salary',self.salary
+emp1=emp("ram",2000)
+emp2=emp('laxman',2001)
+emp1.disp()
+emp2.disp()
+print 'the total number of employees is',emp.empcount
+////
+
+import matplotlib.pyplot as plt
+plt.plot([6],[12])
+plt.ylabel('Y axis')
+plt.xlabel('x axis')
+plt.show()
+////
+import matplotlib as plt
+plt.plot([1,2,3,4],[5,1,2,3])
+plt.ylabel('Y axis')
+plt.xlabel('x axis')
+plt.show()
+//
+multilevel
+import matplotlib.pyplot as plt
+plt.plot([1,2,3,4],[1,4,8,14],'ro')
+plt.show()//
+class animal:
+    def eat(self):
+        print 'eating...'
+class dog(animal):
+    def bark(self):
+        print 'barking'
+class kitten(dog):
+    def sleep(self):
+        print 'slepping...'
+d=kitten()
+d.eat()
+d.bark()
+d.sleep()
+////
+class person:
+    def __init__(self,first,last):
+        self.firstname=first
+        self.lastname=last
+    def name(self):
+      return self.firstname+''+self.lastname
+class employee(person):
+    def __init__(self,first,last,staffnum):
+        person.__init__(self,first,last)
+        self.staffnumber=staffnum
+    def getemployee(self):
+        return self.name()+','+self.staffnumber
+x=person('mahesh','patil')
+y=employee('ravi','k','2007')
+print(x.name())
+print(y.getemployee())
+////
+i wrote
+class person:
+    def __init__(self,first,last,num):
+        self.firstname=first
+        self.lastname=last
+        self.staffnumber=num
+    def name(self):
+      return self.firstname+' '+self.lastname+',',self.staffnumber
+class employee(person):
+    def __init__(self,first,last,staffnum):
+        person.__init__(self,first,last,staffnum)
+        
+    
+x=person('mahesh','patil','195')
+y=employee('ravi','k','2007')
+print(x.name())
+print(y.name())
+///
+complete it 
+def showengine(self):
+         print(self.engine)
+     def showmilege(self):
+         print(self.milege)
+def showcolor(self):
+         print(self.color)
+     def showcost(self):
+         print(self.cost)
+class car:
+    def __init__(self,carname,carmodel,carengine,carmilege,carcolor,carcost):
+        self.name=carname
+        self.model=carmodel
+        self.engine=carengine
+        self.milege=carmilege
+        self.color=carcolor
+        self.cost=carcost
+    def showname(self):
+        print(self.name)
+    def showmodel(self):
+        print(self.model)
+    def showengine(self):
+         print(self.engine)
+     def showmilege(self):
+         print(self.milege)
+     def showcolor(self):
+         print(self.color)
+     def showcost(self):
+         print(self.cost)
+          
+class carinfo(car):
+    carregno=""
+    
+    def __init__(self,carname,carmodel,carregno):
+       car.__init__(self,carname,carmodel)
+       self.carregno=carregno
+    def showcarno(self):
+        print(self.carregno)
+car1=car("Compass",'Jeep')
+car1.showname()
+car1.showmodel()
+car2=carinfo("Compass",'Jeep','KA25 z2220')
+car2.showcarno()
+car2.showmodel()
+/////
+exponential
+import math
+print 'math.e',math.e
+////
+import math
+print 'math.floor(12.234)',math.floor(12.2345)
+print 'math.ceil(12.234)',math.ceil(12.2345)
+////
+import math
+x=12
+y=12
+x=math.hypot(x,y)
+print 'the hypoteneus value is ',x
+////
+import math
+x=16
+y=math.sqrt(x)
+print 'the hypoteneus value is ',y
+////
+remove decimal part
+import math
+x=10213.123
+y=math.trunc(x)
+print 'the hypoteneus value is ',y
+///
+import math
+print 'pi value',math.pi
+////
+import math
+print 'math fabs(-10)',math.fabs(-10)
+print 'math fabs (10)',math.fabs(10)
+////
+import math
+x=10
+y=math.log10(x)
+print'math log10 value of num is',y
+////
+import math
+x=10
+y=math.log1p(x)
+print'math log10 value of num is',y
+////
+import math
+print 'factorial of 6 is',math.factorial(6)
+////
+trigonometric (some error)
+import math
+print 'sin of 30 is ',math.sin(30)
+print 'cos of 30 is ',math.cos(30)
+print 'tan of 45 is ',math.tan(45)
+print 'sinh of .5 is',math.sinh(.5)
+print 'cosh of .4 is',math.cosh(.4)
+print 'tanh of .2 is ',math.tanh(.2)
+///
+import random
+print 'the random number is ',random.randint(100,999) 
+/////
+rank corelation
+judge1=raw_input('Enter the name of first judge')
+judge2=raw_input('Enter the name of second judge')
+num_par=raw_input('Enter th number of participants')
+num_par=int(num_par)
+j1participant1=raw_input('Enter the marks given to participant-1 by judge1')
+j1participant2=raw_input('Enter the marks given to participant-2 by judge1')
+j1participant3=raw_input('Enter the marks given to participant-3 by judge1')
+j1participant4=raw_input('Enter the marks given to participant-4 by judge1')
+j1participant5=raw_input('Enter the marks given to participant-5 by judge1')
+j2participant1=raw_input('Enter the marks given to participant-1 by judge2')
+j2participant2=raw_input('Enter the marks given to participant-2 by judge2')
+j2participant3=raw_input('Enter the marks given to participant-3 by judge2')
+j2participant4=raw_input('Enter the marks given to participant-4 by judge2')
+j2participant5=raw_input('Enter the marks given to participant-5 by judge2')
+j1participant1=int(j1participant1)
+j1participant2=int(j1participant2)
+j1participant3=int(j1participant3)
+j1participant4=int(j1participant4)
+j1participant5=int(j1participant5)
+j2participant1=int(j2participant1)
+j2participant2=int(j2participant2)
+j2participant3=int(j2participant3)
+j2participant4=int(j2participant4)
+j2participant5=int(j2participant5)
+d1=j1participant1-j2participant1
+d2=j1participant2-j2participant2
+d3=j1participant3-j2participant3
+d4=j1participant4-j2participant4
+d5=j1participant5-j2participant5
+d1=d1*d1
+d2=d2*d2
+d3=d3*d3
+d4=d4*d4
+d5=d5*d5
+D=d1+d2+d3+d4+d5
+D=D*6
+D=float(D)
+D=D/(num_par*((num_par*num_par)-1))
+Rank=1-D
+print'The obtained Rank Corelation is  ',Rank
+///
+mean-deviation
+import math
+number=raw_input('Enter the number of inputs')
+number=int(number)
+n1=raw_input('Enter the first number')
+n2=raw_input('Enter the second number')
+n3=raw_input('Enter the third number')
+n4=raw_input('Enter the fourth number')
+n5=raw_input('Enter the fifth number')
+n1=float(n1)
+n2=float(n2)
+n3=float(n3)
+n4=float(n4)
+n5=float(n5)
+mean=(n1+n2+n3+n4+n5)/number
+print'mean',mean
+inter_value1=math.fabs(n1-mean)
+inter_value2=math.fabs(n2-mean)
+inter_value3=math.fabs(n3-mean)
+inter_value4=math.fabs(n4-mean)
+inter_value5=math.fabs(n5-mean)
+inter_value=inter_value1+inter_value2+inter_value3+inter_value4+inter_value5
+print'just checking',inter_value
+inter_value=math.pow(inter_value,2)
+inter_value=inter_value/number
+mean_deviation=math.sqrt(inter_value)
+print'The calculated mean deviation is=',mean_deviation
+///
