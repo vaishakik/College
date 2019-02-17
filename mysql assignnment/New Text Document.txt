@@ -1,0 +1,23 @@
+<html>
+<body>
+<label>
+
+<div>
+<h1>
+<center>
+Query 1
+</center>
+</div>
+</h1>
+
+<br>
+<a href="home.php">
+HOME</a>
+</br>
+<br>
+<a href="Q2.php">
+NEXT</a>
+</br>
+
+</body>
+</html>
